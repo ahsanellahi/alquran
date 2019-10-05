@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.author         = 'Ahsan Ellahi'
   spec.email          = 'ahsan.ellahi896@gmail.com'
 
-  spec.files          = `git ls-files -z`.split("\x0").grep(%r(^lib/))
+  spec.files          = `git ls-files`.split("\n").grep(/lib/)
   spec.require_paths  = %w(lib)
 
   spec.add_development_dependency 'rspec', '~> 3.7'
