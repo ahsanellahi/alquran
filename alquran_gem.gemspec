@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.author         = 'Ahsan Ellahi'
   spec.email          = 'ahsan.ellahi896@gmail.com'
 
-  spec.files          = %w(lib/alquran.rb lib/extensions.rb lib/alquran/base.rb lib/alquran/parah.rb lib/api/url_parser.rb lib/api/client.rb)
+  spec.files          = `git ls-files -z`.split("\x0").select { |file| file.match(/lib/) }
   spec.require_paths  = %w(lib)
 
   spec.add_development_dependency 'rspec', '~> 3.7'
-  spec.add_development_dependency 'httparty'
+  spec.add_development_dependency 'httparty', '~> 0.17.1'
 end

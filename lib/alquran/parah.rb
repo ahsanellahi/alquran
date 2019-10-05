@@ -38,4 +38,3 @@ module Alquran
     end
   end
 end
-
