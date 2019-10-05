@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.author         = 'Ahsan Ellahi'
   spec.email          = 'ahsan.ellahi896@gmail.com'
 
-  spec.files          = %w(lib/alquran.rb lib/alquran/base.rb lib/api/url_parser.rb lib/api/client.rb)
+  spec.files          = %w(lib/alquran.rb lib/extensions.rb lib/alquran/base.rb lib/alquran/parah.rb lib/api/url_parser.rb lib/api/client.rb)
   spec.require_paths  = %w(lib)
 
   spec.add_development_dependency 'rspec', '~> 3.7'

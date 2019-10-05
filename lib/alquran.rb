@@ -1,7 +1,13 @@
+require 'httparty'
+require 'active_support/inflector'
+
 require_relative 'alquran/base'
+require_relative 'alquran/parah'
+
+require_relative 'api/url_parser'
 require_relative 'api/client'
 
-require 'httparty'
+require_relative 'extensions'
 
 # class Alquran
 #   def fetch

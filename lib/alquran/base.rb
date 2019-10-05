@@ -1,7 +1,10 @@
 module Alquran
   class Base
-    def self.call_me
-      puts 'Hehehe!'
+    class << self
+      protected
+        def entity_option
+          { entity: self.name.demodulize.downcase.to_sym }
+        end
     end
   end
 end
