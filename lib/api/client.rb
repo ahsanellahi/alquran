@@ -7,6 +7,10 @@ module Api
         get(parse_url(options))
       end
 
+      def fetch_surahs(**options)
+        get(parse_url(options))
+      end
+
       private
         def get(url)
           response = HTTParty.get(url, headers: headers)
