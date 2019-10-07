@@ -3,7 +3,6 @@ require 'alquran'
 RSpec.describe Alquran::Ayah do
   describe 'show' do
     before :all do
-      sleep 5
       @last_ayah = Alquran::Ayah.fetch(number: 6233)
     end
 
