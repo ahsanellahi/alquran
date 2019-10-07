@@ -13,29 +13,25 @@ RSpec.describe Alquran::Parah do
       @last_parah = Alquran::Parah.fetch(number: 30)
     end
 
-    it 'check count of Ayahs in last Parah' do
-      expect(@last_parah['ayahs'].size).to be(564)
-    end
-
     it 'must have Ayahs' do
       expect(@last_parah).to have_key 'ayahs'
     end
 
-    it 'number of attributes' do
-      expect(@last_parah.keys.size).to be(2)
+    it 'check count of Ayahs in last Parah' do
+      expect(@last_parah['ayahs'].size).to be(564)
     end
 
-    it 'number of attributes' do
+    it 'there should be no transcription' do
       expect(@last_parah['ayahs'].last['transcription']).to be(nil)
     end
   end
 
-  describe 'ayahs' do
+  describe 'surahs' do
     before :all do
       @last_parah = Alquran::Parah.fetch(number: 30, collection: :surahs)
     end
 
-    it 'check offset' do
+    it 'check all surahs exists' do
       expect(@last_parah['all_surahs'].size).to be(38)
     end
   end
