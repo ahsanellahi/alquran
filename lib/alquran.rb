@@ -10,8 +10,5 @@ require_relative 'api/client'
 
 require_relative 'extensions'
 
-# class Alquran
-#   def fetch
-#     raise NotImplementedError, 'Implement this method in a child class'
-#   end
-# end
+module Alquran
+end

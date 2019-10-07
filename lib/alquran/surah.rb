@@ -23,6 +23,7 @@ module Alquran
           extra_options = {
             offset: options[:offset],
             limit: options[:limit],
+            edition: options[:edition],
             sajdah: options[:sajdah]
           }.compact
 
