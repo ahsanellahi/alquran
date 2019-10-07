@@ -27,11 +27,13 @@ module Alquran
               raise RuntimeApiError.new
           end
 
-          extra_options = {
-            offset: options[:offset],
-            limit: options[:limit],
-            sajdah: options[:sajdah]
-          }.compact
+          extra_options = if action_option[:action] == :ayahs
+            {
+              offset: options[:offset],
+              limit: options[:limit],
+              sajdah: options[:sajdah]
+            }.compact
+          end
 
           options.slice(:number).merge(self.entity_option).merge(action_option).merge(extras: extra_options)
         end
