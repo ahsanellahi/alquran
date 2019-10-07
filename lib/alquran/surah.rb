@@ -2,7 +2,7 @@ module Alquran
   class Surah < Base
     class << self
       def fetch(**options)
-        Api::Client.fetch_surahs(filter_options(options))
+        Api::Client.fetch(filter_options(options))
       end
 
       private
@@ -10,13 +10,14 @@ module Alquran
           self.entity_option.merge(action: :index)
         end
 
-        def show_options(number)
-          self.entity_option.merge(action: :show, number: number)
+        def show_options(options)
+          edition_option = { edition: options[:edition] }.compact
+          options.slice(:number).merge(self.entity_option).merge(action: :show).merge(extras: edition_option)
         end
 
         def filter_options(**options)
           return index_options unless options.has_key?(:number)
-          return show_options(options[:number]) unless has_extra_option?(options)
+          return show_options(options) unless has_extra_option?(options)
 
           action_option = { action: :ayahs }
 

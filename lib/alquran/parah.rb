@@ -2,7 +2,7 @@ module Alquran
   class Parah < Base
     class << self
       def fetch(**options)
-        Api::Client.fetch_parahs(filter_options(options))
+        Api::Client.fetch(filter_options(options))
       end
 
       private

@@ -4,6 +4,7 @@ module Api
     BASE_URL = 'http://localhost:3001'
     RELATIVE_PARAH_PATH = 'parahs'
     RELATIVE_SURAH_PATH = 'surahs'
+    RELATIVE_AYAH_PATH = 'ayahs'
 
     def parse_url(**params)
       method_name = "handle_#{params[:entity].to_s}_urls"
@@ -24,10 +25,21 @@ module Api
     def handle_surah_urls(**params)
       case params[:action]
         when :index then [BASE_URL, RELATIVE_SURAH_PATH].join('/')
-        when :show then [BASE_URL, RELATIVE_SURAH_PATH, params[:number]].join('/')
+        when :show
+          relative_url = [BASE_URL, RELATIVE_SURAH_PATH, params[:number]].join('/')
+          [relative_url, prepare_query_string(params[:extras])].join('?')
         when :ayahs
           relative_url = [BASE_URL, RELATIVE_SURAH_PATH, params[:number], params[:action]].join('/')
           [relative_url, prepare_query_string(params[:extras])].join('?')
+      end
+    end
+
+    def handle_ayah_urls(**params)
+      case params[:action]
+        when :show
+          relative_url = [BASE_URL, RELATIVE_AYAH_PATH, params[:number]].join('/')
+          [relative_url, prepare_query_string(params[:extras])].join('?')
+        when :sajdah then [BASE_URL, RELATIVE_AYAH_PATH, :sujood].join('/')
       end
     end
 

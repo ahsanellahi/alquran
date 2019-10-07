@@ -3,11 +3,7 @@ module Api
     extend UrlParser
 
     class << self
-      def fetch_parahs(**options)
-        get(parse_url(options))
-      end
-
-      def fetch_surahs(**options)
+      def fetch(**options)
         get(parse_url(options))
       end
 
