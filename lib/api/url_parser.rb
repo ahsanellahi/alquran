@@ -5,6 +5,7 @@ module Api
     RELATIVE_PARAH_PATH = 'parahs'
     RELATIVE_SURAH_PATH = 'surahs'
     RELATIVE_AYAH_PATH = 'ayahs'
+    RELATIVE_EDITION_PATH = 'editions'
 
     def parse_url(**params)
       method_name = "handle_#{params[:entity].to_s}_urls"
@@ -41,6 +42,10 @@ module Api
           [relative_url, prepare_query_string(params[:extras])].join('?')
         when :sajdah then [BASE_URL, RELATIVE_AYAH_PATH, :sujood].join('/')
       end
+    end
+
+    def handle_edition_urls(**params)
+      [BASE_URL, RELATIVE_EDITION_PATH, params[:number]].join('/')
     end
 
     def prepare_query_string(extras)
