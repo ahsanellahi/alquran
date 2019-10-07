@@ -10,6 +10,7 @@ RSpec.describe Alquran::Parah do
 
   describe 'show' do
     before :all do
+      sleep 5
       @last_parah = Alquran::Parah.fetch(number: 30)
     end
 

@@ -1,6 +1,6 @@
 require 'alquran'
 
-RSpec.describe Alquran::Parah do
+RSpec.describe Alquran::Surah do
   describe 'index' do
     it do
       sleep 5
