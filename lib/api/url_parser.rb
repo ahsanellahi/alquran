@@ -1,7 +1,7 @@
 module Api
   module UrlParser
-    # BASE_URL = 'http://api.alquranpak.com'
-    BASE_URL = 'http://localhost:3001'
+    BASE_URL = 'http://api.alquranpak.com'
+
     RELATIVE_PARAH_PATH = 'parahs'
     RELATIVE_SURAH_PATH = 'surahs'
     RELATIVE_AYAH_PATH = 'ayahs'
