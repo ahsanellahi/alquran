@@ -1,5 +1,4 @@
 require 'httparty'
-require 'active_support/inflector'
 
 require_relative 'alquran/base'
 require_relative 'alquran/parah'
