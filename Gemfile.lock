@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    alquran (0.0.0)
+    alquran (0.0.4)
+      httparty (~> 0.17.1)
 
 GEM
   remote: https://rubygems.org/
@@ -33,7 +34,6 @@ PLATFORMS
 
 DEPENDENCIES
   alquran!
-  httparty (~> 0.17.1)
   rspec
 
 BUNDLED WITH
