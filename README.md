@@ -1,4 +1,3 @@
-
 # AlQuran ![build:passed](https://travis-ci.com/ahsanellahi/alquran.svg?branch=master)
 
 Complete information of the Holy Quran.
@@ -8,11 +7,11 @@ Complete information of the Holy Quran.
 ## Description
 
 This gem provides the following infomation:
-- **Parahs**
-- **Surahs** (Chapters)
-- **Ayahs** (Verses)
-- **Transcriptions** (Translations/Tafsir provided by more than 130 authors)
-- **Editions** (General information of all the authors who worked on transcriptions)
+-   **Parahs**
+-   **Surahs** (Chapters)
+-   **Ayahs** (Verses)
+-   **Transcriptions** (Translations/Tafsir provided by more than 130 authors)
+-   **Editions** (General information of all the authors who worked on transcriptions)
 
 ## Installation
 

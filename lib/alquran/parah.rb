@@ -19,9 +19,9 @@ module Alquran
           return show_options(options[:number]) unless options.has_key?(:collection)
 
           action_option = case options
-            when -> (opts) { opts[:collection] === :surahs }
+            when -> (opts) { opts[:collection] == :surahs }
               { action: :surahs }
-            when -> (opts) { opts[:collection] === :ayahs }
+            when -> (opts) { opts[:collection] == :ayahs }
               { action: :ayahs }
             else
               raise RuntimeApiError.new

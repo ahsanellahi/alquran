@@ -8,7 +8,7 @@ module Api
     RELATIVE_EDITION_PATH = 'editions'
 
     def parse_url(**params)
-      method_name = "handle_#{params[:entity].to_s}_urls"
+      method_name = "handle_#{params[:entity]}_urls"
       self.send(method_name, params)
     end
 

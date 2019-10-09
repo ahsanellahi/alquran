@@ -6,7 +6,7 @@ module Alquran
       end
 
       private
-        def filter_options(**options)
+        def filter_options(**_options)
           self.entity_option.merge(action: :index)
         end
     end
