@@ -1,4 +1,4 @@
-# AlQuran ![build:passed](https://travis-ci.com/ahsanellahi/alquran.svg?branch=master)
+# AlQuran ![build:passed](https://travis-ci.com/ahsanellahi/alquran.svg?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fb7c3483282c40c5a298882d41c810f8)](https://www.codacy.com/manual/ahsanellahi/alquran?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ahsanellahi/alquran&amp;utm_campaign=Badge_Grade) [![Gem Version](https://badge.fury.io/rb/alquran.svg)](https://badge.fury.io/rb/alquran)
 
 Complete information of the Holy Quran.
 
