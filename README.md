@@ -25,7 +25,7 @@ gem install alquran
 ```ruby
 > require 'alquran'
 ```
-##
+---
 
 ### Parah
 
@@ -126,7 +126,7 @@ To fetch all Ayahs of Parah:
   }
 ]
 ```
-##
+---
 
 ### Surah
 
@@ -221,7 +221,7 @@ To fetch ayahs for different edition:
 }]
 ...
 ```
-##
+---
 
 ### Ayahs
 
@@ -286,7 +286,7 @@ To fetch all Sajdah Ayahs:
   ...
 ]
 ```
-##
+---
 
 ### Editions
 
