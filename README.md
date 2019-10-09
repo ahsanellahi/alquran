@@ -221,7 +221,6 @@ To fetch ayahs for different edition:
 }]
 ...
 ```
-
 ##
 
 ### Ayahs
@@ -287,7 +286,6 @@ To fetch all Sajdah Ayahs:
   ...
 ]
 ```
-
 ##
 
 ### Editions
