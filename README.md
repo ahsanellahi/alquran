@@ -1,5 +1,5 @@
 
-# AlQuran
+# AlQuran ![build:passed](https://travis-ci.com/ahsanellahi/alquran.svg?branch=master)
 
 Complete information of the Holy Quran.
 
