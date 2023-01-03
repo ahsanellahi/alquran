@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'rspec', '~> 3.7'
 
-  spec.add_dependency 'httparty', '~> 0.17.1'
+  spec.add_dependency 'httparty', '>= 0.17.1', '< 0.22.0'
 
   spec.required_ruby_version = '>= 2.5.0'
 
